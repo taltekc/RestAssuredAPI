@@ -1,3 +1,4 @@
+
 package modal.listuser;
 
 import java.util.HashMap;
@@ -12,8 +13,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "url",
-        "text"
+    "url",
+    "text"
 })
 public class Support {
 

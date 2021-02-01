@@ -1,5 +1,5 @@
 
-package modal.listuser;
+package utiltiy.validateData;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,50 +9,26 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "email",
     "first_name",
+    "middle_name",
     "last_name",
-    "avatar"
+    "date_of_birth"
 })
-public class Datum {
+public class StudentPostRequestData {
 
-    @JsonProperty("id")
-    private Integer id;
-    @JsonProperty("email")
-    private String email;
     @JsonProperty("first_name")
     private String firstName;
+    @JsonProperty("middle_name")
+    private String middleName;
     @JsonProperty("last_name")
     private String lastName;
-    @JsonProperty("avatar")
-    private String avatar;
+    @JsonProperty("date_of_birth")
+    private String dateOfBirth;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    @JsonProperty("id")
-    public Integer getId() {
-        return id;
-    }
-
-    @JsonProperty("id")
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    @JsonProperty("email")
-    public String getEmail() {
-        return email;
-    }
-
-    @JsonProperty("email")
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     @JsonProperty("first_name")
     public String getFirstName() {
@@ -62,6 +38,16 @@ public class Datum {
     @JsonProperty("first_name")
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    @JsonProperty("middle_name")
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    @JsonProperty("middle_name")
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
     @JsonProperty("last_name")
@@ -74,14 +60,14 @@ public class Datum {
         this.lastName = lastName;
     }
 
-    @JsonProperty("avatar")
-    public String getAvatar() {
-        return avatar;
+    @JsonProperty("date_of_birth")
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    @JsonProperty("avatar")
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
+    @JsonProperty("date_of_birth")
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     @JsonAnyGetter
@@ -92,11 +78,6 @@ public class Datum {
     @JsonAnySetter
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
-    }
-
-    @Override
-    public String toString() {
-        return new ToStringBuilder(this).append("id", id).append("email", email).append("firstName", firstName).append("lastName", lastName).append("avatar", avatar).append("additionalProperties", additionalProperties).toString();
     }
 
 }
