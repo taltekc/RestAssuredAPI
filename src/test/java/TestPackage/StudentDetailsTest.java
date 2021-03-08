@@ -31,8 +31,8 @@ public class StudentDetailsTest {
         System.out.println(response.getBody().asString());
 
         JsonPath js = response.jsonPath();
-        System.out.println(js.get("id"));
-        System.out.println(js.get("first_name"));
+        /*System.out.println(js.get("id"));
+        System.out.println(js.get("first_name"));*/
         id=js.get("id");
         System.out.println(id);
         response.prettyPrint();

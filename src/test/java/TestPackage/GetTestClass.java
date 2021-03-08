@@ -58,14 +58,14 @@ public class GetTestClass {
 
         JsonPath jpath = res.getBody().jsonPath();
 
-        System.out.println(jpath.get("data.id[0]"));
-        System.out.println(jpath.get("page"));
+      /*  System.out.println(jpath.get("data.id[0]"));
+        System.out.println(jpath.get("page"));*/
 
         int aa=jpath.getList("data").size();
 
         for(int i=0;i<aa;i++){
 
-            System.out.println(jpath.get("data.email["+i+"]"));
+            //System.out.println(jpath.get("data.email["+i+"]"));
         }
 
 

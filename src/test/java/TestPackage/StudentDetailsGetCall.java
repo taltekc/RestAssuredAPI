@@ -35,7 +35,7 @@ public class StudentDetailsGetCall {
 
 
 
-    @org.junit.Test
+    @Test
     public void getCall2() throws JsonProcessingException {
 
         RestAssured.baseURI="https://reqres.in/";

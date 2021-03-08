@@ -3,7 +3,7 @@ package TestPackage;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class PostTestClass {
 
@@ -25,8 +25,8 @@ public class PostTestClass {
         System.out.println(response.getBody().asString());
 
         JsonPath js = response.jsonPath();
-        System.out.println(js.get("id"));
-        System.out.println(js.get("first_name"));
+//        System.out.println(js.get("id"));
+//        System.out.println(js.get("first_name"));
 
     }
 
