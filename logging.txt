@@ -11,21 +11,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "firstName": "Milton",
-    "lastName": "Senger",
-    "email": "Test430@gmail.com",
-    "password": "Test99430",
-    "confirmPassword": "Test99430",
+    "firstName": "Darron",
+    "lastName": "Johns",
+    "email": "Test633@gmail.com",
+    "password": "Test99633",
+    "confirmPassword": "Test99633",
     "dob": {
         "year": 2011,
         "month": 3,
-        "day": 7
+        "day": 14
     },
     "gender": "male",
     "agree": true
 }
 HTTP/1.1 201 Created
-Date: Sun, 07 Mar 2021 17:08:17 GMT
+Date: Sun, 14 Mar 2021 23:20:50 GMT
 Server: Apache
 X-Powered-By: PHP/7.4.15
 Access-Control-Allow-Origin: *
@@ -41,10 +41,10 @@ Content-Type: application/json; charset=UTF-8
 {
     "success": true,
     "message": "Registration Success",
-    "id": "TTCzMlWK"
+    "id": "TTCIFoGs"
 }
 Request method:	GET
-Request URI:	http://qa.taltektc.com/api/student/TTCzMlWK
+Request URI:	http://qa.taltektc.com/api/student/TTCIFoGs
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -56,7 +56,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 07 Mar 2021 17:08:18 GMT
+Date: Sun, 14 Mar 2021 23:20:51 GMT
 Server: Apache
 X-Powered-By: PHP/7.4.15
 Access-Control-Allow-Origin: *
@@ -73,12 +73,88 @@ Content-Type: application/json; charset=UTF-8
     "status": 200,
     "message": "Student Found",
     "data": {
-        "firstName": "Milton",
-        "lastName": "Senger",
-        "studentId": "TTCzMlWK",
-        "email": "Test430@gmail.com",
+        "firstName": "Darron",
+        "lastName": "Johns",
+        "studentId": "TTCIFoGs",
+        "email": "Test633@gmail.com",
         "gender": "male",
-        "dob": "2011-03-07",
+        "dob": "2011-03-14",
         "agree": "1"
     }
+}
+Request method:	POST
+Request URI:	http://qa.taltektc.com/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "Test633@gmail.com",
+    "password": "Test99633"
+}
+HTTP/1.1 200 OK
+Date: Sun, 14 Mar 2021 23:20:51 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.15
+Cache-control: no-store, max-age=0, no-cache
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "status code": 200,
+    "message": "Login Success",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MTU3NjQwNTEsIm5iZiI6MTYxNTc2NDA2MSwiZXhwIjoxNjE1ODUwNDUxLCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiI1NiIsImZpcnN0X25hbWUiOiJEYXJyb24iLCJsYXN0X25hbWUiOiJKb2hucyIsImVtYWlsIjoiVGVzdDYzM0BnbWFpbC5jb20iLCJzdHVkZW50SWQiOiJUVENJRm9HcyJ9fQ.zYvG4ueUzlFui3BbICFwALexlIlyHW7uAvXetHouCzI"
+}
+Request method:	PUT
+Request URI:	http://qa.taltektc.com/api/student/TTCIFoGs
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MTU3NjQwNTEsIm5iZiI6MTYxNTc2NDA2MSwiZXhwIjoxNjE1ODUwNDUxLCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiI1NiIsImZpcnN0X25hbWUiOiJEYXJyb24iLCJsYXN0X25hbWUiOiJKb2hucyIsImVtYWlsIjoiVGVzdDYzM0BnbWFpbC5jb20iLCJzdHVkZW50SWQiOiJUVENJRm9HcyJ9fQ.zYvG4ueUzlFui3BbICFwALexlIlyHW7uAvXetHouCzI
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Lynell",
+    "lastName": "Crooks",
+    "email": "Test633@gmail.com",
+    "dob": {
+        "year": 2011,
+        "month": 3,
+        "day": 14
+    },
+    "gender": "male",
+    "agree": true
+}
+HTTP/1.1 200 OK
+Date: Sun, 14 Mar 2021 23:20:51 GMT
+Server: Apache
+X-Powered-By: PHP/7.4.15
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Cache-control: no-store, max-age=0, no-cache
+Vary: Authorization
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+
+{
+    "success": true,
+    "message": "Update success"
 }

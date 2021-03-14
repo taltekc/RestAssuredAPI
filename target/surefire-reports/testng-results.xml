@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="2047" started-at="2021-03-14T19:20:48 EDT" finished-at="2021-03-14T19:20:50 EDT">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="2047" started-at="2021-03-14T19:20:48 EDT" finished-at="2021-03-14T19:20:50 EDT">
+      <class name="TalentTek.TTechPutPatchTest">
+        <test-method status="PASS" signature="studentLogin()[pri:0, instance:TalentTek.TTechPutPatchTest@75f32542]" name="studentLogin" duration-ms="103" started-at="2021-03-14T19:20:50 EDT" finished-at="2021-03-14T19:20:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studentLogin -->
+        <test-method status="PASS" signature="studentPutTTech()[pri:0, instance:TalentTek.TTechPutPatchTest@75f32542]" name="studentPutTTech" duration-ms="76" started-at="2021-03-14T19:20:50 EDT" depends-on-methods="TalentTek.TTechPutPatchTest.studentLogin" finished-at="2021-03-14T19:20:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studentPutTTech -->
+      </class> <!-- TalentTek.TTechPutPatchTest -->
+      <class name="TalentTek.TTechPostGetTest">
+        <test-method status="PASS" signature="signUpTTech()[pri:0, instance:TalentTek.TTechPostGetTest@7692d9cc]" name="signUpTTech" duration-ms="1756" started-at="2021-03-14T19:20:48 EDT" finished-at="2021-03-14T19:20:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTTech -->
+        <test-method status="PASS" signature="getStudentInfo()[pri:0, instance:TalentTek.TTechPostGetTest@7692d9cc]" name="getStudentInfo" duration-ms="97" started-at="2021-03-14T19:20:50 EDT" depends-on-methods="TalentTek.TTechPostGetTest.signUpTTech" finished-at="2021-03-14T19:20:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStudentInfo -->
+      </class> <!-- TalentTek.TTechPostGetTest -->
+      <class name="resources.commonUtility.BaseTest">
+        <test-method status="PASS" signature="setCache()[pri:0, instance:resources.commonUtility.BaseTest@74650e52]" name="setCache" is-config="true" duration-ms="4" started-at="2021-03-14T19:20:48 EDT" finished-at="2021-03-14T19:20:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCache -->
+      </class> <!-- resources.commonUtility.BaseTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
