@@ -51,7 +51,4 @@ public class TTechPostGetTest extends BaseTest {
 
 
 
-
-
-
 }

@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.384 s - in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.693 s <<< FAILURE! - in TestSuite
+TalentTek.TTechPutPatchTest.studentPutTTech  Time elapsed: 0.054 s  <<< FAILURE!
+java.lang.AssertionError: expected [2001] but found [200]
+	at TalentTek.TTechPutPatchTest.studentPutTTech(TTechPutPatchTest.java:26)
+

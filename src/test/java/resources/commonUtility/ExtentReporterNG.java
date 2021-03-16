@@ -13,8 +13,8 @@ public class ExtentReporterNG {
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 		reporter.config().setReportName("Talent Tech API Test Automation ");
 		reporter.config().setDocumentTitle("Regression API test Results");
-		
-		 extent =new ExtentReports();
+
+		extent =new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Tester", "Iqbal");
 		return extent;

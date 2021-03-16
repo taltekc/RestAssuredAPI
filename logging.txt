@@ -11,21 +11,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "firstName": "Darron",
-    "lastName": "Johns",
-    "email": "Test633@gmail.com",
-    "password": "Test99633",
-    "confirmPassword": "Test99633",
+    "firstName": "Jena",
+    "lastName": "Monahan",
+    "email": "Test679@gmail.com",
+    "password": "Test99679",
+    "confirmPassword": "Test99679",
     "dob": {
         "year": 2011,
         "month": 3,
-        "day": 14
+        "day": 15
     },
     "gender": "male",
     "agree": true
 }
 HTTP/1.1 201 Created
-Date: Sun, 14 Mar 2021 23:20:50 GMT
+Date: Tue, 16 Mar 2021 00:31:16 GMT
 Server: Apache
 X-Powered-By: PHP/7.4.15
 Access-Control-Allow-Origin: *
@@ -41,10 +41,10 @@ Content-Type: application/json; charset=UTF-8
 {
     "success": true,
     "message": "Registration Success",
-    "id": "TTCIFoGs"
+    "id": "TTCeEL3h"
 }
 Request method:	GET
-Request URI:	http://qa.taltektc.com/api/student/TTCIFoGs
+Request URI:	http://qa.taltektc.com/api/student/TTCeEL3h
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -56,7 +56,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 14 Mar 2021 23:20:51 GMT
+Date: Tue, 16 Mar 2021 00:31:17 GMT
 Server: Apache
 X-Powered-By: PHP/7.4.15
 Access-Control-Allow-Origin: *
@@ -73,12 +73,12 @@ Content-Type: application/json; charset=UTF-8
     "status": 200,
     "message": "Student Found",
     "data": {
-        "firstName": "Darron",
-        "lastName": "Johns",
-        "studentId": "TTCIFoGs",
-        "email": "Test633@gmail.com",
+        "firstName": "Jena",
+        "lastName": "Monahan",
+        "studentId": "TTCeEL3h",
+        "email": "Test679@gmail.com",
         "gender": "male",
-        "dob": "2011-03-14",
+        "dob": "2011-03-15",
         "agree": "1"
     }
 }
@@ -95,11 +95,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "Test633@gmail.com",
-    "password": "Test99633"
+    "email": "Test679@gmail.com",
+    "password": "Test99679"
 }
 HTTP/1.1 200 OK
-Date: Sun, 14 Mar 2021 23:20:51 GMT
+Date: Tue, 16 Mar 2021 00:31:17 GMT
 Server: Apache
 X-Powered-By: PHP/7.4.15
 Cache-control: no-store, max-age=0, no-cache
@@ -112,35 +112,35 @@ Content-Type: application/json; charset=UTF-8
     "success": true,
     "status code": 200,
     "message": "Login Success",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MTU3NjQwNTEsIm5iZiI6MTYxNTc2NDA2MSwiZXhwIjoxNjE1ODUwNDUxLCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiI1NiIsImZpcnN0X25hbWUiOiJEYXJyb24iLCJsYXN0X25hbWUiOiJKb2hucyIsImVtYWlsIjoiVGVzdDYzM0BnbWFpbC5jb20iLCJzdHVkZW50SWQiOiJUVENJRm9HcyJ9fQ.zYvG4ueUzlFui3BbICFwALexlIlyHW7uAvXetHouCzI"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MTU4NTQ2NzcsIm5iZiI6MTYxNTg1NDY4NywiZXhwIjoxNjE1OTQxMDc3LCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiI2OSIsImZpcnN0X25hbWUiOiJKZW5hIiwibGFzdF9uYW1lIjoiTW9uYWhhbiIsImVtYWlsIjoiVGVzdDY3OUBnbWFpbC5jb20iLCJzdHVkZW50SWQiOiJUVENlRUwzaCJ9fQ.X0ROqmdLflI8InDGdV0eSP5uJYjKa_4N2pTE7jxxYSE"
 }
 Request method:	PUT
-Request URI:	http://qa.taltektc.com/api/student/TTCIFoGs
+Request URI:	http://qa.taltektc.com/api/student/TTCeEL3h
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MTU3NjQwNTEsIm5iZiI6MTYxNTc2NDA2MSwiZXhwIjoxNjE1ODUwNDUxLCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiI1NiIsImZpcnN0X25hbWUiOiJEYXJyb24iLCJsYXN0X25hbWUiOiJKb2hucyIsImVtYWlsIjoiVGVzdDYzM0BnbWFpbC5jb20iLCJzdHVkZW50SWQiOiJUVENJRm9HcyJ9fQ.zYvG4ueUzlFui3BbICFwALexlIlyHW7uAvXetHouCzI
+				Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9xYS50YWx0ZWt0Yy5jb20iLCJhdWQiOiJUSEVfQVVESUVOQ0UiLCJpYXQiOjE2MTU4NTQ2NzcsIm5iZiI6MTYxNTg1NDY4NywiZXhwIjoxNjE1OTQxMDc3LCJpc19hZG1pbiI6ZmFsc2UsImRhdGEiOnsiaWQiOiI2OSIsImZpcnN0X25hbWUiOiJKZW5hIiwibGFzdF9uYW1lIjoiTW9uYWhhbiIsImVtYWlsIjoiVGVzdDY3OUBnbWFpbC5jb20iLCJzdHVkZW50SWQiOiJUVENlRUwzaCJ9fQ.X0ROqmdLflI8InDGdV0eSP5uJYjKa_4N2pTE7jxxYSE
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "firstName": "Lynell",
-    "lastName": "Crooks",
-    "email": "Test633@gmail.com",
+    "firstName": "Morris",
+    "lastName": "Wuckert",
+    "email": "Test679@gmail.com",
     "dob": {
         "year": 2011,
         "month": 3,
-        "day": 14
+        "day": 15
     },
     "gender": "male",
     "agree": true
 }
 HTTP/1.1 200 OK
-Date: Sun, 14 Mar 2021 23:20:51 GMT
+Date: Tue, 16 Mar 2021 00:31:17 GMT
 Server: Apache
 X-Powered-By: PHP/7.4.15
 Access-Control-Allow-Origin: *
