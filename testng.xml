@@ -12,6 +12,7 @@
       <class name="TalentTek.TTechPutPatchTest"/>
       <class name="TalentTek.TTechPatchGetTest"/>
       <class name="TalentTek.TTechDeleteGetTest"/>
+      <class name="TalentTek.TTechGetAllStudents"/>
     </classes>
   </test> 
 
