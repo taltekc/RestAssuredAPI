@@ -10,6 +10,8 @@
     <classes>
       <class name="TalentTek.TTechPostGetTest"/>
       <class name="TalentTek.TTechPutPatchTest"/>
+      <class name="TalentTek.TTechPatchGetTest"/>
+      <class name="TalentTek.TTechDeleteGetTest"/>
     </classes>
   </test> 
 

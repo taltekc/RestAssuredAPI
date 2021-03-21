@@ -72,6 +72,13 @@ public class BaseUtility {
 
     }
 
+    public static SignUpRequestData studentPatchData(String updatePassword){
+        SignUpRequestData sData=new SignUpRequestData();
+        sData.setPassword(updatePassword);
+        sData.setConfirmPassword(updatePassword);
+        return sData;
+    }
+
     public static Response callPostEndpoint(Method httpMethod, Object body, String baseurl, String endpoint) {
 
         if (httpMethod != Method.POST){
@@ -156,6 +163,39 @@ public class BaseUtility {
     }
 
 
+    public static Response callPatchEndpoint(Method httpMethod,String token, Object body, String baseurl, String endpoint) {
+
+        if (httpMethod != Method.PATCH){
+            throw new IllegalArgumentException("Wrong http method requested ");
+        }
+
+        try {
+            spec = RestAssured.given().spec(BaseTest.getRequestSpecification());
+            Response patch = spec.header("Content-Type", "application/json").accept(ContentType.JSON)
+                    .header("Authorization", "Bearer "+token)
+                    .baseUri(baseurl).body(body).patch(endpoint);
+            return patch;
+        }catch(Exception exception){
+            throw new RuntimeException("Could not call endpoint successfully");
+        }
+    }
+
+    public static Response callDeleteEndPointTTech(Method httpMethod,String token, String baseUrl, String endpoint) {
+
+        if (httpMethod!=Method.DELETE){
+            throw new IllegalArgumentException("Wrong http method requested ");
+        }
+        try{
+            spec = RestAssured.given().spec(BaseTest.getRequestSpecification());
+            Response delete=spec.header("Content-Type","application/json").accept(ContentType.JSON)
+                    .header("Authorization", "Bearer "+token)
+                    .baseUri(baseUrl).delete(endpoint);
+            return delete;
+        }catch(Exception exception){
+            throw new RuntimeException("could not call endpoint successfully");
+        }
+
+    }
 
 
 }

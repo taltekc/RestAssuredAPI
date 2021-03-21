@@ -13,11 +13,14 @@ public class CommonData {
     public static String endPointSignUp="api/signup";
     public static String endPointGetStudent="api/student/";
     public static String endPointStudentLogin="api/login";
+    public static String endPointStudentUpdatePassword="api/updatePassword/";
+    public static String endPointAllStudents="api/students";
 
 
     public int rand=faker.number().numberBetween(100,999);
-    public String email="Test"+rand+"@gmail.com";
+    public String email="Test1"+rand+"@gmail.com";
     public String password="Test99"+rand;
+    public String updatePassword="Update11"+rand;
 
     public static UserInfo getUserInfo(){
         UserInfo info=new UserInfo();
@@ -29,7 +32,6 @@ public class CommonData {
         info.setGender("male");
         info.setAgree(true);
         return info;
-
     }
 
 }
