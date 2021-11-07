@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.777 s - in TestSuite
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 3.046 s <<< FAILURE! - in TestSuite
+TalentTek.TTechDeleteGetTest.studentDeleteTest  Time elapsed: 0.066 s  <<< FAILURE!
+java.lang.AssertionError: expected [Data Deleted1] but found [Data Deleted]
+	at TalentTek.TTechDeleteGetTest.studentDeleteTest(TTechDeleteGetTest.java:26)
+

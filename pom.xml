@@ -97,9 +97,6 @@
       <version>5.0.7</version>
     </dependency>
 
-
-
-
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -150,7 +147,6 @@
     </dependency>
   </dependencies>
 
-
   <profiles>
     <profile>
       <id>APIRegression</id>
@@ -161,7 +157,6 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.0.0-M4</version>
             <configuration>
-
               <suiteXmlFiles>
                 <suiteXmlFile>testng.xml</suiteXmlFile>
               </suiteXmlFiles>

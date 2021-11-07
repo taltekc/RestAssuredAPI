@@ -6,8 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-import resources.commonUtility.BaseTest;
-import resources.commonUtility.BaseUtility;
+import resources.commonUtility.Utility;
 import resources.testdata.CommonData;
 
 public class TTechGetAllStudents {
@@ -18,8 +17,8 @@ public class TTechGetAllStudents {
     public void allStudentsInfo() throws JsonProcessingException {
 
         CommonData cdata=new CommonData();
-        BaseUtility.encodeConfig();
-        Response response = BaseUtility.callGetEndPointTTech(Method.GET,cdata.baseURLTTech,cdata.endPointAllStudents);
+        Utility.encodeConfig();
+        Response response = Utility.callGetEndPointTTech(Method.GET,cdata.baseURLTTech,cdata.endPointAllStudents);
 
         System.out.println(response.getStatusCode());
         //System.out.println(response.getBody().asString());

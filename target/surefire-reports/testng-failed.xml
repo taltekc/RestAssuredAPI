@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" verbose="0" name="TalentTech API Test(failed)">
     <classes>
-      <class name="TalentTek.TTechPutPatchTest">
+      <class name="TalentTek.TTechDeleteGetTest">
         <methods>
           <include name="setCache"/>
-          <include name="studentPutTTech"/>
-          <include name="studentLogin"/>
+          <include name="studentDeleteVerify"/>
+          <include name="studentDeleteTest"/>
         </methods>
-      </class> <!-- TalentTek.TTechPutPatchTest -->
+      </class> <!-- TalentTek.TTechDeleteGetTest -->
     </classes>
   </test> <!-- TalentTech API Test(failed) -->
 </suite> <!-- Failed suite [TTech Regression] -->

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TTech_Regression">
-              <span class="suite-name border-passed">TTech Regression</span>
+              <span class="suite-name border-failed">TTech Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,  1 skipped,  7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TTech_Regression" class="hide-methods failed suite-TTech_Regression"> (hide)</a> <!-- hide-methods failed suite-TTech_Regression -->
+                      <a href="#" panel-name="suite-TTech_Regression" class="show-methods failed suite-TTech_Regression"> (show)</a> <!-- show-methods failed suite-TTech_Regression -->
+                    </span>
+                    <div class="method-list-content failed suite-TTech_Regression">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TTech_Regression" title="TalentTek.TTechDeleteGetTest" hash-for-method="studentDeleteTest">studentDeleteTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TTech_Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TTech_Regression" class="hide-methods skipped suite-TTech_Regression"> (hide)</a> <!-- hide-methods skipped suite-TTech_Regression -->
+                      <a href="#" panel-name="suite-TTech_Regression" class="show-methods skipped suite-TTech_Regression"> (show)</a> <!-- show-methods skipped suite-TTech_Regression -->
+                    </span>
+                    <div class="method-list-content skipped suite-TTech_Regression">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TTech_Regression" title="TalentTek.TTechDeleteGetTest" hash-for-method="studentDeleteVerify">studentDeleteVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TTech_Regression -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +130,11 @@
                       <a href="#" panel-name="suite-TTech_Regression" class="show-methods passed suite-TTech_Regression"> (show)</a> <!-- show-methods passed suite-TTech_Regression -->
                     </span>
                     <div class="method-list-content passed suite-TTech_Regression">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TTech_Regression" title="TalentTek.TTechGetAllStudents" hash-for-method="allStudentsInfo">allStudentsInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TTech_Regression" title="TalentTek.TTechPostGetTest" hash-for-method="getStudentInfo">getStudentInfo</a> <!-- method navigator-link -->
@@ -124,6 +157,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TTech_Regression" title="TalentTek.TTechPatchGetTest" hash-for-method="studentLoginWithUpdatedPassword">studentLoginWithUpdatedPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TTech_Regression" title="TalentTek.TTechPutPatchTest" hash-for-method="studentPutTTech">studentPutTTech</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -139,6 +177,45 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TTech_Regression" class="panel TTech_Regression">
+          <div class="suite-TTech_Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TalentTek.TTechDeleteGetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="studentDeleteTest">
+                  </a> <!-- studentDeleteTest -->
+                  <span class="method-name">studentDeleteTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Data Deleted1] but found [Data Deleted]
+	at TalentTek.TTechDeleteGetTest.studentDeleteTest(TTechDeleteGetTest.java:26)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TTech_Regression-class-failed -->
+          <div class="suite-TTech_Regression-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TalentTek.TTechDeleteGetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="studentDeleteVerify">
+                  </a> <!-- studentDeleteVerify -->
+                  <span class="method-name">studentDeleteVerify</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TTechDeleteGetTest.studentDeleteVerify()[pri:0, instance:TalentTek.TTechDeleteGetTest@4ef37659] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TTech_Regression-class-skipped -->
           <div class="suite-TTech_Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -186,6 +263,21 @@
           <div class="suite-TTech_Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">TalentTek.TTechGetAllStudents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allStudentsInfo">
+                  </a> <!-- allStudentsInfo -->
+                  <span class="method-name">allStudentsInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TTech_Regression-class-passed -->
+          <div class="suite-TTech_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">TalentTek.TTechPatchGetTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -194,6 +286,13 @@
                   <a name="patchTTechTest">
                   </a> <!-- patchTTechTest -->
                   <span class="method-name">patchTTechTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="studentLoginWithUpdatedPassword">
+                  </a> <!-- studentLoginWithUpdatedPassword -->
+                  <span class="method-name">studentLoginWithUpdatedPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,6 +315,8 @@
       &lt;class name=&quot;TalentTek.TTechPostGetTest&quot;/&gt;
       &lt;class name=&quot;TalentTek.TTechPutPatchTest&quot;/&gt;
       &lt;class name=&quot;TalentTek.TTechPatchGetTest&quot;/&gt;
+      &lt;class name=&quot;TalentTek.TTechDeleteGetTest&quot;/&gt;
+      &lt;class name=&quot;TalentTek.TTechGetAllStudents&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TalentTech API Test --&gt;
 &lt;/suite&gt; &lt;!-- TTech Regression --&gt;
@@ -229,7 +330,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TalentTech API Test (3 classes)</span>
+                <span class="test-name">TalentTech API Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,27 +356,43 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signUpTTech')
 data.setCell(0, 2, 'TalentTek.TTechPostGetTest')
-data.setCell(0, 3, 1654);
+data.setCell(0, 3, 1600);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'patchTTechTest')
 data.setCell(1, 2, 'TalentTek.TTechPatchGetTest')
-data.setCell(1, 3, 146);
+data.setCell(1, 3, 150);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'studentLogin')
-data.setCell(2, 2, 'TalentTek.TTechPutPatchTest')
-data.setCell(2, 3, 102);
+data.setCell(2, 1, 'studentLoginWithUpdatedPassword')
+data.setCell(2, 2, 'TalentTek.TTechPatchGetTest')
+data.setCell(2, 3, 118);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getStudentInfo')
-data.setCell(3, 2, 'TalentTek.TTechPostGetTest')
-data.setCell(3, 3, 68);
+data.setCell(3, 1, 'studentLogin')
+data.setCell(3, 2, 'TalentTek.TTechPutPatchTest')
+data.setCell(3, 3, 109);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'studentPutTTech')
-data.setCell(4, 2, 'TalentTek.TTechPutPatchTest')
-data.setCell(4, 3, 61);
+data.setCell(4, 1, 'getStudentInfo')
+data.setCell(4, 2, 'TalentTek.TTechPostGetTest')
+data.setCell(4, 3, 80);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'allStudentsInfo')
+data.setCell(5, 2, 'TalentTek.TTechGetAllStudents')
+data.setCell(5, 3, 78);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'studentPutTTech')
+data.setCell(6, 2, 'TalentTek.TTechPutPatchTest')
+data.setCell(6, 3, 71);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'studentDeleteTest')
+data.setCell(7, 2, 'TalentTek.TTechDeleteGetTest')
+data.setCell(7, 3, 68);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'studentDeleteVerify')
+data.setCell(8, 2, 'TalentTek.TTechDeleteGetTest')
+data.setCell(8, 3, 0);
 window.suiteTableData['TTech_Regression']= { tableData: data, tableDiv: 'times-div-TTech_Regression'}
 return data;
 }
@@ -295,11 +412,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TTech_Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">TalentTek.TTechPutPatchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setCache</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TalentTek.TTechDeleteGetTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setCache</span>
                 <br/>
@@ -327,29 +451,53 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">signUpTTech</span>
-                <span class="method-start">18 ms</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getStudentInfo</span>
-                <span class="method-start">1678 ms</span>
+                <span class="method-start">1621 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TalentTek.TTechPutPatchTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">studentLogin</span>
-                <span class="method-start">1746 ms</span>
+                <span class="method-start">1702 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">studentPutTTech</span>
-                <span class="method-start">1848 ms</span>
+                <span class="method-start">1812 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TalentTek.TTechPatchGetTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">patchTTechTest</span>
-                <span class="method-start">1909 ms</span>
+                <span class="method-start">1883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">studentLoginWithUpdatedPassword</span>
+                <span class="method-start">2033 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TalentTek.TTechDeleteGetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">studentDeleteTest</span>
+                <span class="method-start">2152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">studentDeleteVerify</span>
+                <span class="method-start">2226 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TalentTek.TTechGetAllStudents</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">allStudentsInfo</span>
+                <span class="method-start">2227 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

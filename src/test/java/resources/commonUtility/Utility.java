@@ -1,25 +1,23 @@
 package resources.commonUtility;
 
-import io.restassured.http.ContentType;
-import io.restassured.http.Method;
-import io.restassured.response.Response;
-import resources.testdata.StloginData.StudentLoginData;
-import resources.testdata.signUpData.Dob;
-import resources.testdata.signUpData.SignUpRequestData;
-import resources.testdata.signUpData.UserInfo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.config.EncoderConfig;
+import io.restassured.http.ContentType;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class BaseUtility {
+public class Utility {
+
 
     static ObjectMapper mapper = new ObjectMapper();
     static RequestSpecBuilder builder = new RequestSpecBuilder();
     static ResponseSpecBuilder response = new ResponseSpecBuilder();
     static RequestSpecification spec;
+
 
     public static void encodeConfig(){
 
@@ -29,55 +27,6 @@ public class BaseUtility {
     }
 
 
-    public static SignUpRequestData signupReData(UserInfo user, String email, String password ){
-
-        SignUpRequestData sData=new SignUpRequestData();
-        Dob dob=new Dob();
-        sData.setDob(dob);
-        dob.setYear(user.getYear());
-        dob.setMonth(user.getMonth());
-        dob.setDay(user.getDay());
-
-        sData.setFirstName(user.getFirstName());
-        sData.setLastName(user.getLastName());
-        sData.setEmail(email);
-        sData.setPassword(password);
-        sData.setConfirmPassword(password);
-        sData.setGender(user.getGender());
-        sData.setAgree(user.isAgree());
-        return sData;
-    }
-
-    public static StudentLoginData studentLogData(String email,String password){
-        StudentLoginData studentlogindata=new StudentLoginData();
-        studentlogindata.setEmail(email);
-        studentlogindata.setPassword(password);
-        return studentlogindata;
-    }
-
-    public static SignUpRequestData studentPutData(UserInfo user, String email){
-
-        SignUpRequestData sData=new SignUpRequestData();
-        Dob dob=new Dob();
-        sData.setDob(dob);
-        dob.setYear(user.getYear());
-        dob.setMonth(user.getMonth());
-        dob.setDay(user.getDay());
-        sData.setFirstName(user.getFirstName());
-        sData.setLastName(user.getLastName());
-        sData.setEmail(email);
-        sData.setGender(user.getGender());
-        sData.setAgree(user.isAgree());
-        return sData;
-
-    }
-
-    public static SignUpRequestData studentPatchData(String updatePassword){
-        SignUpRequestData sData=new SignUpRequestData();
-        sData.setPassword(updatePassword);
-        sData.setConfirmPassword(updatePassword);
-        return sData;
-    }
 
     public static Response callPostEndpoint(Method httpMethod, Object body, String baseurl, String endpoint) {
 

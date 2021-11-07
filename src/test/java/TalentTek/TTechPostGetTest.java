@@ -1,15 +1,15 @@
 package TalentTek;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.http.Method;
 import org.testng.Assert;
 import resources.commonUtility.BaseTest;
-import resources.commonUtility.BaseUtility;
+import resources.commonUtility.Utility;
 import resources.testdata.CommonData;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
+
 public class TTechPostGetTest extends BaseTest {
 
     ObjectMapper mapper = new ObjectMapper();
@@ -19,8 +19,8 @@ public class TTechPostGetTest extends BaseTest {
     public void signUpTTech() throws JsonProcessingException {
 
         CommonData cdata=new CommonData();
-        BaseUtility.encodeConfig();
-        Response response = BaseUtility.callPostEndpoint(Method.POST,BaseUtility.signupReData(cdata.getUserInfo(),cdata.email,cdata.password),cdata.baseURLTTech,cdata.endPointSignUp);
+        Utility.encodeConfig();
+        Response response = Utility.callPostEndpoint(Method.POST,cdata.signUpBody(cdata.email,cdata.password),cdata.baseURLTTech,cdata.endPointSignUp);
         System.out.println(response.getStatusCode());
         System.out.println(response.getBody().asString());
         Assert.assertEquals(response.getStatusCode(),201);
@@ -36,8 +36,8 @@ public class TTechPostGetTest extends BaseTest {
     public void getStudentInfo() throws JsonProcessingException {
 
         CommonData cdata=new CommonData();
-        BaseUtility.encodeConfig();
-        Response response = BaseUtility.callGetEndPointTTech(Method.GET,cdata.baseURLTTech,cdata.endPointGetStudent+BaseTest.getTestCache().get("studentId").toString());
+        Utility.encodeConfig();
+        Response response = Utility.callGetEndPointTTech(Method.GET,cdata.baseURLTTech,cdata.endPointGetStudent+BaseTest.getTestCache().get("studentId"));
 
         System.out.println(response.getStatusCode());
         System.out.println(response.getBody().asString());
@@ -48,6 +48,9 @@ public class TTechPostGetTest extends BaseTest {
         Assert.assertEquals(obj.get("data").get("email").toString().replaceAll("\"",""),BaseTest.getTestCache().get("email"));
 
     }
+    // -- Run the test from command line 'mvn test -PAPIRegression'
+
+
 
 
 

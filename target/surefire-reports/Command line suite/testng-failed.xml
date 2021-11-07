@@ -3,13 +3,20 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
-      <class name="TalentTek.TTechPutPatchTest">
+      <class name="TalentTek.TTechDeleteGetTest">
         <methods>
           <include name="setCache"/>
-          <include name="studentPutTTech"/>
-          <include name="studentLogin"/>
+          <include name="studentDeleteVerify"/>
+          <include name="studentDeleteTest"/>
         </methods>
-      </class> <!-- TalentTek.TTechPutPatchTest -->
+      </class> <!-- TalentTek.TTechDeleteGetTest -->
+      <class name="TalentTek.TTechPatchGetTest">
+        <methods>
+          <include name="patchTTechTest"/>
+          <include name="setCache"/>
+          <include name="studentLoginWithUpdatedPassword"/>
+        </methods>
+      </class> <!-- TalentTek.TTechPatchGetTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import resources.commonUtility.BaseTest;
-import resources.commonUtility.BaseUtility;
+import resources.commonUtility.Utility;
 import resources.testdata.CommonData;
 
 public class TTechPatchGetTest extends BaseTest {
@@ -20,8 +20,8 @@ public class TTechPatchGetTest extends BaseTest {
     public void patchTTechTest() throws JsonProcessingException {
 
         CommonData cdata=new CommonData();
-        BaseUtility.encodeConfig();
-        Response response = BaseUtility.callPatchEndpoint(Method.PATCH,BaseTest.getTestCache().get("accessToken").toString(),BaseUtility.studentPatchData(cdata.updatePassword),cdata.baseURLTTech,cdata.endPointStudentUpdatePassword+BaseTest.getTestCache().get("studentId").toString());
+        Utility.encodeConfig();
+        Response response = Utility.callPatchEndpoint(Method.PATCH,BaseTest.getTestCache().get("accessToken").toString(),cdata.passwordPatchBody(cdata.updatePassword),cdata.baseURLTTech,cdata.endPointStudentUpdatePassword+BaseTest.getTestCache().get("studentId").toString());
 
         System.out.println(response.getStatusCode());
         System.out.println(response.getBody().asString());
@@ -37,8 +37,8 @@ public class TTechPatchGetTest extends BaseTest {
     public void studentLoginWithUpdatedPassword() throws JsonProcessingException {
 
         CommonData cdata=new CommonData();
-        BaseUtility.encodeConfig();
-        Response response =BaseUtility.callPostEndpoint(Method.POST,BaseUtility.studentLogData(BaseTest.getTestCache().get("email").toString(),BaseTest.getTestCache().get("updatedPassword").toString()),cdata.baseURLTTech,cdata.endPointStudentLogin);
+        Utility.encodeConfig();
+        Response response =Utility.callPostEndpoint(Method.POST,cdata.loginBody(BaseTest.getTestCache().get("email").toString(),BaseTest.getTestCache().get("updatedPassword").toString()),cdata.baseURLTTech,cdata.endPointStudentLogin);
         System.out.println(response.getStatusCode());
         System.out.println(response.getBody().asString());
         JsonNode obj = mapper.readTree(response.getBody().asString());

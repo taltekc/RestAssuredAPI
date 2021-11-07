@@ -1,11 +1,6 @@
 resources\commonUtility\ExtentReporterNG.class
 TalentTek\TTechPostGetTest.class
-resources\testdata\signUpData\Dob.class
 TalentTek\TTechPutPatchTest.class
-resources\testdata\signUpData\UserInfo.class
 resources\commonUtility\BaseTest.class
 resources\testdata\CommonData.class
-resources\testdata\signUpData\SignUpRequestData.class
-resources\testdata\StloginData\StudentLoginData.class
 resources\commonUtility\Listeners.class
-resources\commonUtility\BaseUtility.class
